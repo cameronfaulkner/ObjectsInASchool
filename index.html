@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deluxe School Managment System 1.0</title>
+    <script src = 'objects.js'></script>
+    <script src = 'data.js'></script>
+    <script src = 'backbone.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Deluxe School Managment System 1.0</h1>
+
+<table>
+    <center><select id="list">
+        <option value="0">Students</option>
+        <option value="1">Teachers</option>
+        <option value="2">Sections</option>
+    </select>
+    <div ></div>
+    <button onclick="listItems()">List Items</button>
+    <div id = 'listOutput'></div>
+    </center>
+    <tr>
+    <td><input id="student_first" input type="text" placeholder="First Name"></td>
+    <td><input id="student_last"input type="text" placeholder="Last Name"></td>
+    <td><input id="student_grade"input type="number" placeholder="Grade"></td>
+    <td><button onclick="student_add()">Add Student</button></td>
+</tr>
+<tr>
+    <td><input id="teacher_first" input type="text" placeholder="First Name"></td>
+    <td><input id="teacher_last"input type="text" placeholder="Last Name"></td>
+    <td><input id="teacher_class"input type="text" placeholder="Class"></td>
+    <td><button onclick="teacher_add()">Add Teacher</button></td>
+</tr>
+<tr>
+
+    <td><input id="section_name" input type="text" placeholder="Name"></td>
+    <td><input id="student_count"input type="text" placeholder="Student Count"></td>
+    <td><button onclick="section_add()">Add Section</button></td>
+</tr>
+    <tr>
+        <td><input id="student_id" input type="number" placeholder="Student ID"></td>
+        <td><input id="section_id" input type="number" placeholder="Section ID"></td>
+        <td><button onclick="student_section()">Add Student to Section</button></td>
+    </tr>
+    <tr>
+    <td><input id="rstudent_id" input type="number" placeholder="Student ID"></td>
+    <td><input id="rsection_id" input type="number" placeholder="Section ID"></td>
+    <td><button onclick="student_remove()">Remove Student From Section</button></td>
+</tr>
+
+<tr>
+    <td><button onclick="listAll()">List the Objects in the School</button></td>
+</tr>
+<div id="listSection"></div>
+</table>
+
+</body>
+</html>
